@@ -1,0 +1,203 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box
+}
+
+.menu_superior {
+
+	background: linear-gradient(#f69d3c, #3f87a6);
+}
+
+.contenedormenu_superior {
+	width: 900px;
+	margin: auto;
+	display: flex
+}
+
+.logo {
+
+	width: 60px;
+}
+
+.contenedormenu_superior img {
+
+	width: 400%;
+}
+
+.menu {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.menu ul {
+	display: flex;
+	column-gap: 10px;
+}
+
+.menu a {
+	color: black;
+	text-decoration: none;
+}
+
+.grid {
+	width: 900px;
+	margin: auto;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 1 fr;
+	grid-template-rows: 200px 200px 200px;
+	grid-template-areas: 'micros'
+		'aereos'
+		'cancun'
+}
+
+.grid>div {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.grid a {
+	color: royalblue;
+	font-size: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: all 0.4s ease-in-out;
+}
+
+
+.grid a:hover {
+	opacity: 0.5;
+}
+
+.grid1 {
+	grid-area: micros;
+}
+
+.grid1 a {
+	background-image: url(../imagenes/micro.argentina.png);
+}
+
+.grid2 {
+
+	grid-area: aereos;
+}
+
+.grid2 a {
+
+	background-image: url(../imagenes/avion.argentina.png)
+}
+
+.grid3 {
+	grid-area: cancun;
+}
+
+.grid3 a {
+	background-image: url(../imagenes/avion.cancun.png);
+}
+
+.flex {
+	width: 900px;
+	margin: auto;
+	margin-top: 70px;
+}
+
+.flex h1 {
+	text-align: center;
+}
+
+.flex .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 30px;
+	margin-top: 40px;
+}
+
+.flex .img {
+	width: 300px
+}
+
+.flex img {
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.flex img:hover {
+
+	transform: rotate(15deg) scale(1.5);
+
+}
+
+.flex .text {
+	flex: 1;
+}
+
+.logo_footer {
+	display: flex;
+	align-items: center;
+}
+
+.footer {
+	border-style: solid;
+	color: black;
+	background-image: url(../imagenes/cabecera.png);
+	background-size: cover;
+}
+
+.barra {
+	padding: 15px;
+}
+
+.barra a {
+	color: black;
+	text-decoration: none;
+
+
+}
+
+.barra:hover {
+	color: rgb(240, 237, 237);
+}
+
+
+.menu_inferior {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.menu2 a{
+	text-decoration: none;
+	color: black;
+	list-style: none;
+}
+
+.fondo {
+
+	background-color:beige
+}
